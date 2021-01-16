@@ -1,10 +1,12 @@
 // ****Class Example****
 //-----------------------------------------------------------//
-// const stringToShout = prompt("what do you want to shout?");
-// const shout = stringToShout.toUpperCase();
-// const shoutMessage = `The message to shout is: ${shout}!!`;
+/*
+const stringToShout = prompt("what do you want to shout?");
+const shout = stringToShout.toUpperCase();
+const shoutMessage = `The message to shout is: ${shout}!!`;
 
-// document.querySelector('main').innerHTML = shoutMessage;
+document.querySelector('main').innerHTML = shoutMessage;
+*/
 //-----------------------------------------------------------//
 
 const word1 = prompt("Please provide word one?");
