@@ -1,3 +1,5 @@
+// CLASS = TreeHouse - javascript-numbers //
+
 /*
 main.innerHTML = `
 <p>${rank}</p>`;
@@ -5,15 +7,24 @@ main.innerHTML = `
 
 const main = document.querySelector('main');
 
-const inputHigh = prompt('Provide a number.');
+const inputLow = prompt('Provide a low number.');
+const inputHigh = prompt('Provide a high number.');
+const lowNumber = parseInt(inputLow);
 const highNumber = parseInt(inputHigh);
-const randomNumber = Math.floor( Math.random() * highNumber ) + 1;
+
+if (lowNumber && highNumber) {
+    const randomNumber = Math.floor( Math.random() * (highNumber - lowNumber + 1)  ) + lowNumber;
+    main.innerHTML = `
+    <p>${randomNumber} is a random number between ${lowNumber} and ${highNumber}.</p>`;
+}
+else {
+    main.innerHTML = `
+    <p>This is not a number please try again.</p>`;
+}
+
 
 /* -- this is how I debugged
 console.log(inputHigh);
 console.log(highNumber);
 console.log(randomNumber);
 */
-
-main.innerHTML = `
-<p>${randomNumber} is a random number between 1 and ${highNumber}.</p>`;

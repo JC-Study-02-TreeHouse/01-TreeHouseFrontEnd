@@ -1,3 +1,5 @@
+// CLASS = TreeHouse - javascript-basics //
+
 let correct = 0;
 let rank;
 const main = document.querySelector('main');

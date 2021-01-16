@@ -1,3 +1,4 @@
+// CLASS = TreeHouse - javascript-basics //
 // ****Class Example****
 //-----------------------------------------------------------//
 /*

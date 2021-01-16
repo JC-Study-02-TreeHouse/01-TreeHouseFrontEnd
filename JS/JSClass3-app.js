@@ -1,3 +1,4 @@
+// CLASS = TreeHouse - javascript-numbers //
 const main = document.querySelector('main');
 const secsPerMin = 60;
 const minsPerHour = 60;
