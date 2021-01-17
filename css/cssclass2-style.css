@@ -1,0 +1,46 @@
+/* CLASS = TreeHouse - Mobile-First-css-Layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: #3a3a3a;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.main-header {
+    background: #3acec2;
+    padding: 1em 0;
+}
+
+.main-footer {
+    padding: 2em 0;
+    background: #d9e4ea;
+    text-align: center;
+}
+
+.name {
+    margin: 0px;
+}
+
+@media (min-width: 769px) {
+    .wrap {
+        min-height: calc(100vh - 121px);
+    }
+ 
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}
