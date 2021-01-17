@@ -1,0 +1,67 @@
+<!-- treehouse class - HTML Forms -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/cssclass2-normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/formsClass1-style.css">
+    </head>
+    <body>
+        <form action="index.html" method="post">
+            <h1>SIgn Up</h1>
+            
+            <fieldset>
+                <legend><span class="number">1</span>Your Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" placeholder="name">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="user_password">
+
+                <label>Age:</label>
+                <input type="radio" id="under_13" value="under_13" name="user_age">
+                <label for="under_13" class="light">Under 13</label><br>
+                <input type="radio" id="over_13" value="over_13" name="user_age">
+                <label for="over_13" class="light">Over 13</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend><span class="number">2</span>Your Comments</legend>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="user_comment"></textarea>
+            
+                <label for="job">Job Roles:</label>
+                <select id="job" name="user_job">
+                    <optgroup label="web">
+                        <option value="frontend">FrontEnd</option>
+                        <option value="php">php</option>
+                        <option value="react">react</option>
+                    </optgroup>
+                    <optgroup label="bus">
+                        <option value="bi">power bi</option>
+                        <option value="qlik">qlik</option>
+                        <option value="excel">excel</option>
+                    </optgroup>
+                </select>
+                
+            <label>Interests:</label>
+            <input type="checkbox" id="dev" value="Interest_dev" name="User_int">
+            <label for="dev" class="light">Development</label><br>
+            <input type="checkbox" id="des" value="Interest_des" name="User_int">
+            <label for="des" class="light">Design</label><br>
+            <input type="checkbox" id="bus" value="Interest_bus" name="User_int">
+            <label for="bus" class="light">business</label>
+            
+            </fieldset>
+
+            
+            <button type="submit">Sign Up</button>
+        </form>
+      
+      
+    </body>
+</html>
