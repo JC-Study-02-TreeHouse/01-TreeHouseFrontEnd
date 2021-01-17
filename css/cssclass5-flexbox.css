@@ -1,0 +1,27 @@
+/* CLASS = TreeHouse - FlexBox */
+/*
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 450px;
+	align-items: center;
+}
+
+.item {
+	flex-grow: 1;
+	flex-basis: 200px; -- this is the minimum width of an object, defaults to 0 so won't distribute over more lines when set to 0
+	
+	-- Can short hand the above with flex:1 200px; --
+}
+*/
+
+/* CENTERING ITEMS */
+.container {
+	display: flex;
+	min-height: 50vh;
+	justify-content: center;
+}
+
+.item {
+	align-self: center;
+}

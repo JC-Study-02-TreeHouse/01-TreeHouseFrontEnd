@@ -1,1 +1,38 @@
 /* CLASS = TreeHouse - FlexBox */
+.container {
+  display: flex; /*works as a block element so takes up a full row*/
+  /*display: inline-flex; /*as it is inline it only takes up the space need*/
+  /*flex-direction: row-reverse; /*right to left*/
+  /*flex-direction: column; /*top to bottom + stretch to full container*/
+  /*flex-direction: column-reverse; /*bottom to top + stretch to full container*/
+  flex-wrap: wrap; /*stops the items exceeding the container and re arrange as you decide*/
+  justify-content: space-around;
+
+}
+
+
+/* ORDERING */
+/*
+.item-1 {
+  margin-right: auto; -- this is useful for site logos
+  order: -2; -- Order is default to 0 for all items and uses the html order as default
+}
+
+.item-2 {
+  order: 2;
+}
+
+.item-5 {
+  order: -1;
+}
+*/
+
+/* GROWING */
+
+.item {
+  flex-grow: 1; /*--default is 0*/
+}
+
+.item-3 {
+  flex-grow: 3;
+}
