@@ -1,0 +1,68 @@
+/* CLASS = TreeHouse - CSS Selectors */
+body {
+			font-family: 'Nunito', sans-serif;
+			color: #616161;
+			padding: 40px 0;
+		}
+		section {
+			margin: auto;
+			width: 50%;
+		}
+		/*
+		div {
+			border-bottom: 1px dotted;
+			padding: 18px 10px;
+			color: #777;
+	
+		}
+		*/
+		ul {
+			list-style: none;
+			width: 50%;
+			margin: auto;
+		}
+		li {
+			border-bottom: 1px dotted;
+			padding: 15px 10px;
+		}
+/* :nth-child Pseudo-classes------------------ */
+/* session 1
+li:nth-child(-n+4) {
+  background: #52bab3;
+  color: white;
+}
+*/
+/* Structural Pseudo-classes------------------ */
+/* session 2 
+div:nth-of-type(even) {
+//div:nth-last-of-type(even) {
+  background: #52bab3;
+  color: white;
+}
+*/
+/* session 3 */
+
+:root {
+  background: #e3effb;
+}
+
+:target {
+  background: #384047;
+  color: white;
+}
+
+#col-c:target {
+  background: #eff1f2;
+  color: initial;
+  box-shadow: 0 0 6px rgba(0,0,0, .2);
+}
+
+input:not([type="submit"]) {
+	/*border: solid 1px red;*/
+	box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
+}
+
+.col:not(:first-child),
+nav a:not(:first-child) {
+	margin-left: 15px;
+}
