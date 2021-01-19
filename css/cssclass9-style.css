@@ -1,0 +1,60 @@
+/* CLASS = TreeHouse - CSS Selectors */
+/* Structural Pseudo-classes------------------ */
+/* session 1
+li:first-child {
+  background: #52bab3;
+  color: white;
+}
+
+li:last-child {
+  border: none;
+}
+
+span:only-child {
+  color: #52bab3;
+  font-size: 1.5em;
+}
+*/
+/* this is a really usefull one for highlighting elements that should have been populated by the user */
+/* session 1
+li:empty {
+  background-color: tomato;
+}
+*/
+/* Base Styles -------------------------------- */
+/* session 1
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5;
+	color: #384047;
+	padding: 10px 0 80px;
+}
+div {
+	max-width: 610px;
+	margin: auto;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+li {
+	margin-bottom: 14px;
+}
+a {
+	color: #4183c4;
+}
+*/
+/* UI element states pseudo-classes ------------ */
+
+input:focus,
+textarea:focus {
+  border-color: #52bab3;
+}
+
+input:disabled {
+  background: #ddd;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}

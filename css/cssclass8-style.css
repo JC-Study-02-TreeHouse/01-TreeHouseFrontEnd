@@ -1,0 +1,85 @@
+/* CLASS = TreeHouse - CSS Selectors */
+/* targeting a 'form' element with a 'class' of 'form-contact' */
+form[class='form-contact'] {
+    padding: 20px 24px;
+    background: lightblue;
+}
+
+div[id='container'] {
+    max-width: 500px;
+    margin: auto;
+}
+
+input[placeholder] {
+    background-color: lightgoldenrodyellow;
+}
+/*
+input[type='button'], input[type='reset'], input[type='submit'] {
+    cursor: pointer;
+}
+*/
+a[target='_blank'] {
+    color: rgb(4, 70, 4);
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+/* using classes */
+.br {
+    border-radius: .5em;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: .875em;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+.default {
+    background-color: lightseagreen;
+}
+
+.error {
+    background-color: maroon;
+}
+
+@media (min-width:769px) {
+    .inln {
+        width: auto;
+        display: inline-block;
+    }
+/* example of sibling being affected (targeted) */
+.btn + .btn {
+    margin-left: 20px;
+}
+}
+
+/* combinators (to do with children, siblings) */
+/* example below you can see it doesn't affect the a inside the label tags*/
+form > a {
+    font-size: .7em;
+}
+
+/* example of sibling being affected (general) */
+/* notice how this only affects the labels under the h1 because the second form element stops them being siblings of the h1 */
+h1 ~ label {
+    background: tomato;
+    color: white;
+    padding: 5px;
+}
