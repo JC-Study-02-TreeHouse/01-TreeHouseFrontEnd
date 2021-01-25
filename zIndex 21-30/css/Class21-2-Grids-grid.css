@@ -1,0 +1,60 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(150px, auto);
+	grid-gap: 10px;
+	grid-template-areas: /* this is name area in the grid*/
+		'header'
+		'nav'
+		'main'
+		'aside'
+		'footer'; /* this is connected to the media below*/
+}
+
+header {
+	/* grid-column: 1 / -1; this is the shorthand of 'start' and 'end' seen on the rows below*/
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	/* grid-row-start: -3; */
+	/* grid-row-end: -1; */
+	grid-area: footer;
+}
+
+@media (min-width: 768px) {
+	.container {
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 100px minmax(150px, auto) 100px;
+		grid-template-areas:
+			'header header header'
+			'nav main aside'
+			'footer footer footer';
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		grid-template-areas:
+			'header header header'
+			'nav main aside'
+			'nav footer footer';
+	}
+}
